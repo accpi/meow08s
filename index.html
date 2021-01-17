@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="./resources/home.ico" />
+	<title>Meow-08s</title>
+	<link rel="stylesheet" href="./styling/style.css">
+	<script src="https://kit.fontawesome.com/e18265713c.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+</head>
+
+<body>
+	<div id="page-container">
+		<div class="wrapper">
+			<header>
+				<h1>Meow-08s - The Cat Drumkit</h1>
+				<a class="socialLink" target="_blank" href="http://starcatcafe.com/"><i class="fas fa-home"></i></a>
+				<a class="socialLink" target="_blank" href="https://github.com/accpi/meow08s"><i class="fab fa-github-alt"></i></a>
+			</header>
+
+			<main>
+				<div class="drumKit">
+					<div class="visualizer">
+						<div class="visualizerBar a"></div>
+						<div class="visualizerBar b"></div>
+						<div class="visualizerBar c"></div>
+						<div class="visualizerBar d"></div>
+						<div class="visualizerBar e"></div>
+						<div class="visualizerBar f"></div>
+						<div class="visualizerBar g"></div>
+						<div class="visualizerBar h"></div>
+						<div class="visualizerBar i"></div>
+						<div class="visualizerBar j"></div>
+					</div>
+				</div>
+
+				<div class="keys" id="demo">
+					<button data-key="65" class="key" onmousedown="kitKeyClick(65)">
+						<kbd>Meow</kbd>
+						<p class="sound">A</p>
+					</button>
+					<button data-key="83" class="key" onmousedown="kitKeyClick(83)">
+						<kbd>Toon</kbd>
+						<p class="sound">S</p>
+					</button>
+					<button data-key="68" class="key" onmousedown="kitKeyClick(68)">
+						<kbd>Roar</kbd>
+						<p class="sound">D</p>
+					</button>
+					<button data-key="70" class="key" onmousedown="kitKeyClick(70)">
+						<kbd>Happy</kbd>
+						<p class="sound">F</p>
+					</button>
+					<button data-key="71" class="key" onmousedown="kitKeyClick(71)">
+						<kbd>Angry</kbd>
+						<p class="sound">G</p>
+					</button>
+					<button data-key="72" class="key"onmousedown="kitKeyClick(72)">
+						<kbd>Attn</kbd>
+						<p class="sound">H</p>
+					</button>
+				</div>
+			</main>
+
+			<footer>
+				<a class="socialLink" target="_blank" href="http://starcatcafe.com/"><h2>Nelson Kim &#169; 2021</h2></a>
+			</footer>
+		</div>
+	</div>
+
+	<audio data-key="65" src="sounds/meow.ogg"></audio>
+	<audio data-key="83" src="sounds/cartoon.wav"></audio>
+	<audio data-key="68" src="sounds/roar.wav"></audio>
+	<audio data-key="70" src="sounds/happy.wav"></audio>
+	<audio data-key="71" src="sounds/angry.wav"></audio>
+	<audio data-key="72" src="sounds/attention.wav"></audio>
+
+	<script src="./scripts/anime.min.js"></script>
+	<script src="./scripts/script.js"></script>
+</body>
+
+</html>
