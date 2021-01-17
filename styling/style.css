@@ -26,6 +26,10 @@ a {
 	text-decoration: none;
 }
 
+* {
+	font-family: 'Yusei Magic', sans-serif;
+}
+
 a:hover {
 	color: #b1e3aa;
 }
